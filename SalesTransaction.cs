@@ -12,8 +12,8 @@ namespace SalesTransactionDemo
             SalesTransaction t2 = new SalesTransaction("Susan", 400d, .15d);
             SalesTransaction t3 = new SalesTransaction("Luara", 100d, .2d);
 
-            Console.WriteLine($"{t1.Name} made:" + t1);
-            Console.WriteLine($"{t1.Name} and {t2.Name} made:" + t1 + t2);
+            Console.WriteLine($"{t1.Name} made: " + t1);
+            Console.WriteLine($"{t1.Name} and {t2.Name} made: " + (t1 + t2));
             Console.Read();
         }
     }
