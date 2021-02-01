@@ -83,19 +83,17 @@ namespace SalesTransactionDemo
             Commission = salesAmount * commissionRate;
         }
 
-        public override string ToString()
-        {
-            return $"{commission}USD.\r\n";
-        }
-
-        public static SalesTransaction operator+(SalesTransaction t1, SalesTransaction t2)
+        public static SalesTransaction operator +(SalesTransaction t1, SalesTransaction t2)
         {
             SalesTransaction newT = new SalesTransaction();
             newT.Commission = t1.Commission + t2.Commission;
 
             return newT;
         }
-           
-            
+
+        public override string ToString()
+        {
+            return $"{commission}USD.\r\n";
+        }
     }
 }
