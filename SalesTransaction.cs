@@ -36,6 +36,7 @@ namespace SalesTransactionDemo
                 name = value;
             }
         }
+        
         public double SalesAmount
         {
             get
@@ -47,6 +48,7 @@ namespace SalesTransactionDemo
                 salesAmount = value;
             }
         }
+        
         public double Commission
         {
             get => commission; set => commission = value;
